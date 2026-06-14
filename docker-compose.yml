@@ -1,0 +1,30 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    env_file:
+      - .env
+    volumes:
+      - huggingface-cache:/root/.cache/huggingface
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=5)"]
+      interval: 10s
+      timeout: 8s
+      retries: 12
+      start_period: 20s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+
+volumes:
+  huggingface-cache:
