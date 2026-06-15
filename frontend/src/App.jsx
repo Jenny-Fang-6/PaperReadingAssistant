@@ -1201,7 +1201,7 @@ function App() {
     <div className="app-shell">
       <aside className="sidebar">
         <div>
-          <p className="eyebrow">AI Research Assistant</p>
+          <p className="eyebrow">AI Paper Assistant</p>
           <h1>论文阅读助手</h1>
           <p className="subtle">追踪论文，送入工作台分析。</p>
         </div>
@@ -1249,7 +1249,7 @@ function App() {
       <main className={viewMode === 'workbench' ? 'workbench-main' : ''}>
         <header className="topbar">
           <div>
-            <p className="eyebrow">{viewMode === 'workbench' ? 'Workbench' : 'Paper Tracking Inbox'}</p>
+            <p className="eyebrow">{viewMode === 'workbench' ? 'Reading Workspace' : 'Paper Tracking'}</p>
             <h2>{viewMode === 'workbench' ? '工作台' : '论文追踪收件箱'}</h2>
           </div>
           <div className="topbar-actions">
