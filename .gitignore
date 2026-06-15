@@ -21,4 +21,5 @@ codex_sessions/
 *.jpg
 *.jpeg
 *.gif
+!assets/screenshots/*.png
 *.log

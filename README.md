@@ -2,6 +2,32 @@
 
 一个面向科研阅读场景的 AI 论文追踪与精读助手。系统支持关注领域追踪、论文元信息自动获取、可解释排序、PDF 解析、结构化总结、Reviewer 视角分析、论文问答、多论文趋势分析、关系分析与文献综述生成。
 
+## Screenshots
+
+### Paper Tracking Inbox
+
+关注领域追踪入口支持选择研究领域、关键词组、论文来源、会议范围、时间范围和排序方式；系统会自动获取论文元信息，并按领域合并去重。
+
+![Paper Tracking Inbox](assets/screenshots/tracking-inbox.png)
+
+### Reading Workbench
+
+工作台用于承接候选论文，支持可解释排序、论文筛选、单篇精读和多论文分析。排序分数来自语义相关性、新近性、关键词匹配、代码线索和引用量等算法指标。
+
+![Reading Workbench](assets/screenshots/workbench-ranking.png)
+
+### Multi-paper Analysis
+
+多论文分析支持研究趋势分析和论文关系分析，帮助用户发现一组论文之间的主题聚类、方法相似性和综述脉络。
+
+![Multi-paper Analysis](assets/screenshots/multi-paper-analysis.png)
+
+### PDF Reading and Visual Summary
+
+单篇精读支持 PDF 解析、结构化总结、Reviewer 分析、问答历史和图表辅助总结；系统会尝试识别技术架构图与主结果表，辅助理解论文核心贡献。
+
+![PDF Reading and Visual Summary](assets/screenshots/pdf-reading-summary.png)
+
 ## Features
 
 - 关注领域追踪：按用户选择的研究领域和关键词，从 Semantic Scholar 与 arXiv 获取最新论文信息。
